@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Fri, 12 Oct 2018 13:51:30 +0800
+Source: openvpn
+Binary: openvpn
+Architecture: source
+Version: 2.4.6-1ubuntu2ppa1~cosmic
+Distribution: cosmic
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Johannes Choo <jhanschoo@gmail.com>
+Description:
+ openvpn    - virtual private network daemon
+Changes:
+ openvpn (2.4.6-1ubuntu2ppa1~cosmic) cosmic; urgency=low
+ .
+   * debian/patches/95-xor-patch.patch: Apply Tunnelblick's XOR patch
+Checksums-Sha1:
+ 765d754fd16d529168549e8d8fd010693abbcc4e 2033 openvpn_2.4.6-1ubuntu2ppa1~cosmic.dsc
+ 2728fa24d67d4a0d2c329a510cf0fb62b956a5c1 61916 openvpn_2.4.6-1ubuntu2ppa1~cosmic.debian.tar.xz
+ a75414a127acd8d85aa23983ec61fe735d01a214 7364 openvpn_2.4.6-1ubuntu2ppa1~cosmic_source.buildinfo
+Checksums-Sha256:
+ dc0b3776c94ca22857a799edef90beed5e7df61b6220c444288766e92f05d618 2033 openvpn_2.4.6-1ubuntu2ppa1~cosmic.dsc
+ bf701b94f6d16e9b62a215da5917785aa440d4f09d683035e9b54872a07f8ad6 61916 openvpn_2.4.6-1ubuntu2ppa1~cosmic.debian.tar.xz
+ b5f1a6f4a8c215f401e0859de41e2b26d493072c1523fcf4da04033bf088d202 7364 openvpn_2.4.6-1ubuntu2ppa1~cosmic_source.buildinfo
+Files:
+ ab55634881b91b21501aaf029090a99d 2033 net optional openvpn_2.4.6-1ubuntu2ppa1~cosmic.dsc
+ fd98efb7e9fe948cf44cd764dab5b030 61916 net optional openvpn_2.4.6-1ubuntu2ppa1~cosmic.debian.tar.xz
+ c17fef14208eb91069b25f46941fa913 7364 net optional openvpn_2.4.6-1ubuntu2ppa1~cosmic_source.buildinfo
+Original-Maintainer: Bernhard Schmidt <berni@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEYK4yuieAGxO60dyee297MmJake4FAlvAQNAACgkQe297MmJa
+ke4j3gwAkUhJCx6dN0xeSp9NUitlHcj8TpiENxpJ0BnNQ3h0xicPm9Pe8qTzmptw
+ZXGLfzdME9fAWdhvL29uO0Npyji7emu9V/zUNFdpZI6ttgnMqx4NAZhgAi0b5ZQn
+CrNNiAv98j1TQoST/Sxpl16JetK++VdE2Jl8Fuy9wdgcFg94FkHDL+pdY3Y8cplc
+Pu7cUpzeg02dvtuNO9qaQsfGUPhlp6ubKR/owSxpkMZnTikOBbphqN3B3xRGWgPs
+IXIHerB7UikEtNOvcNB5uFdcEdX285qFuO1V1LdDMoL1/U8lOaMzCFRJPpmErcsh
+VFduY7kmceByxwbgGl4SK/d5ohlAhkXArQtNoAlcWSABn1XDYUmsU4dSRjgK7cBC
+SR9Y3oTW+YN8HWMtnA4DwSTtoM/TgjviY8zAt1VA2boM/ylZrDLU3F/Vn49/5ocu
+H5R97uTJCFPj+yYL4I1FnHtDMi+aX7uzJuk4ZRefqzOCDe/TOybpCi8v5jqx6Sey
+1QFgada+
+=NqtO
+-----END PGP SIGNATURE-----
