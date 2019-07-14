@@ -1,0 +1,63 @@
+ dpkg-buildpackage -us -uc -ui -S -sd
+dpkg-buildpackage: info: source package openvpn
+dpkg-buildpackage: info: source version 2.4.6-1ubuntu2.3ppa1
+dpkg-buildpackage: info: source distribution cosmic
+dpkg-buildpackage: info: source changed by Johannes Choo <jhanschoo@gmail.com>
+ dpkg-source --before-build .
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: applying 95-xorpatch.patch
+ fakeroot debian/rules clean
+dh clean
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory '/home/jhanschoo/build/openvpn/cosmic/openvpn-2.4.6'
+# These two get deleted on "make clean", but come in the tarball
+# hack to keep them around after "make clean"
+test -f distro/rpm/openvpn.spec.not || mv distro/rpm/openvpn.spec distro/rpm/openvpn.spec.not
+test -f tests/t_client.sh.not || mv tests/t_client.sh tests/t_client.sh.not
+dh_auto_clean
+test -f distro/rpm/openvpn.spec.not && mv distro/rpm/openvpn.spec.not distro/rpm/openvpn.spec
+test -f tests/t_client.sh.not && mv tests/t_client.sh.not tests/t_client.sh
+# clean plugins
+# /usr/bin/make -C plugin/auth-pam/ clean
+# /usr/bin/make -C plugin/down-root/ clean
+make[1]: Leaving directory '/home/jhanschoo/build/openvpn/cosmic/openvpn-2.4.6'
+   debian/rules override_dh_clean
+make[1]: Entering directory '/home/jhanschoo/build/openvpn/cosmic/openvpn-2.4.6'
+dh_clean -X win/openvpn.nsi.orig
+make[1]: Leaving directory '/home/jhanschoo/build/openvpn/cosmic/openvpn-2.4.6'
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building openvpn using existing ./openvpn_2.4.6.orig.tar.xz
+dpkg-source: info: using patch list from debian/patches/series
+dpkg-source: info: building openvpn in openvpn_2.4.6-1ubuntu2.3ppa1.debian.tar.xz
+dpkg-source: info: building openvpn in openvpn_2.4.6-1ubuntu2.3ppa1.dsc
+ dpkg-genbuildinfo --build=source
+ dpkg-genchanges -sd --build=source >../openvpn_2.4.6-1ubuntu2.3ppa1_source.changes
+dpkg-genchanges: info: not including original source code in upload
+ dpkg-source --after-build .
+dpkg-source: info: unapplying 95-xorpatch.patch
+dpkg-source: info: unapplying lp-1828771-CapabilityBoundingSet-for-auth_pam.patch
+dpkg-source: info: unapplying openvpn-fips-2.4.patch
+dpkg-source: info: unapplying systemd.patch
+dpkg-source: info: unapplying spelling_errors.patch
+dpkg-source: info: unapplying match-manpage-and-command-help.patch
+dpkg-source: info: unapplying kfreebsd_support.patch
+dpkg-source: info: unapplying openvpn-pkcs11warn.patch
+dpkg-source: info: unapplying debian_nogroup_for_sample_files.patch
+dpkg-source: info: unapplying auth-pam_libpam_so_filename.patch
+dpkg-source: info: unapplying move_log_dir.patch
+dpkg-buildpackage: info: binary and diff upload (original source NOT included)
+Now running lintian openvpn_2.4.6-1ubuntu2.3ppa1_source.changes ...
+Finished running lintian.
+Now signing changes and any dsc files...
+long key IDs are discouraged; please use key fingerprints instead
+ signfile dsc openvpn_2.4.6-1ubuntu2.3ppa1.dsc 0x7B6F7B32625A91EE
+
+ fixup_buildinfo openvpn_2.4.6-1ubuntu2.3ppa1.dsc openvpn_2.4.6-1ubuntu2.3ppa1_source.buildinfo
+ signfile buildinfo openvpn_2.4.6-1ubuntu2.3ppa1_source.buildinfo 0x7B6F7B32625A91EE
+
+ fixup_changes dsc openvpn_2.4.6-1ubuntu2.3ppa1.dsc openvpn_2.4.6-1ubuntu2.3ppa1_source.changes
+ fixup_changes buildinfo openvpn_2.4.6-1ubuntu2.3ppa1_source.buildinfo openvpn_2.4.6-1ubuntu2.3ppa1_source.changes
+ signfile changes openvpn_2.4.6-1ubuntu2.3ppa1_source.changes 0x7B6F7B32625A91EE
+
+Successfully signed dsc, buildinfo, changes files

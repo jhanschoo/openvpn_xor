@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 14 Jul 2019 21:02:28 +0800
+Source: openvpn
+Architecture: source
+Version: 2.4.6-1ubuntu3.1ppa1
+Distribution: disco
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Johannes Choo <jhanschoo@gmail.com>
+Changes:
+ openvpn (2.4.6-1ubuntu3.1ppa1) disco; urgency=low
+ .
+   * debian/patches/95-xorpatch.patch: Apply Tunnelblick's xorpatch
+Checksums-Sha1:
+ ab8fd70c29612897f3c2a87222ea17ec25b10634 2013 openvpn_2.4.6-1ubuntu3.1ppa1.dsc
+ 0ec82afa90e88c295f09c1ba2685f39f733b92dc 63700 openvpn_2.4.6-1ubuntu3.1ppa1.debian.tar.xz
+ 432e5d0b6197230e220cb1bbe80709027254d70e 7224 openvpn_2.4.6-1ubuntu3.1ppa1_source.buildinfo
+Checksums-Sha256:
+ d4304077b929c64951f897e38286e0361552f1f868f99848ed5d79757f42c3ee 2013 openvpn_2.4.6-1ubuntu3.1ppa1.dsc
+ 581210ef84231843f06b0ab67d15318d3b4806cd7bb1375e3d1e16ecbbdc408b 63700 openvpn_2.4.6-1ubuntu3.1ppa1.debian.tar.xz
+ 1a4fb97201f259f4057f45253c996139657f8d367cfed1973f48a0aa999a3621 7224 openvpn_2.4.6-1ubuntu3.1ppa1_source.buildinfo
+Files:
+ 5eba4963efaac520ab046976e3c09ccc 2013 net optional openvpn_2.4.6-1ubuntu3.1ppa1.dsc
+ a15cf760a05e6420250ed7945ca81662 63700 net optional openvpn_2.4.6-1ubuntu3.1ppa1.debian.tar.xz
+ a408a25f6e9f758aff9a9a1591653413 7224 net optional openvpn_2.4.6-1ubuntu3.1ppa1_source.buildinfo
+Original-Maintainer: Bernhard Schmidt <berni@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEYK4yuieAGxO60dyee297MmJake4FAl0rLg4ACgkQe297MmJa
+ke7FygwA11BAMHLAQZLreS00d2KPgMhLcOrcnfg7XU6/k1w3vuz66YGbRBeeSl0t
+6Q2GrHxm6RdLtaNyRd/AkeL1Op2QpXettPr3WZy9cEJ87PlyRuZG3XODUJc6p0z0
+Ao9joVKpGQZIe1t2dVOw9vGYj8WltSk9Gz9Y3P4s6lwePpsLCUMy6KdGaju+Qdu9
+xv4XTGfSPKwYlfrgxN+F+Mfs6kousNHWXgnuofKN1vXBIadcoYCV+NdRtm/bS1dN
+HBe573vmyP4CxF3pI45O/lYJLVOJUUTj6yaMzzi/pCU7g9V+/HY/AF/2k5H10yUy
+gdvpUg6HfnwwAEzhfDG0AlOxr4CrcoD/3s++IZ8bkLZSDNOh4Q9ogUOuqc3oZp1K
+P/V2U81u4i0NcSTRSJVxXUvT56W1EsqE2S/Da6AYcrshzcgGm2PWhJSBhueuwFI8
+/x3FmJgaOGnFNYneWWr8yUSaU3KzrZ6O3E7NJEEa3yfFXF03tVi4coBbxsyIB6hC
+m4YzuqWX
+=PN47
+-----END PGP SIGNATURE-----

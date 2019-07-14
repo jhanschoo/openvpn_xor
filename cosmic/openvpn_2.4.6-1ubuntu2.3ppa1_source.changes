@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Sun, 14 Jul 2019 21:32:16 +0800
+Source: openvpn
+Architecture: source
+Version: 2.4.6-1ubuntu2.3ppa1
+Distribution: cosmic
+Urgency: low
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Changed-By: Johannes Choo <jhanschoo@gmail.com>
+Changes:
+ openvpn (2.4.6-1ubuntu2.3ppa1) cosmic; urgency=low
+ .
+   * debian/patches/95-xorpatch.patch: Apply Tunnelblick's xorpatch
+Checksums-Sha1:
+ fa2fbb9c25c489aa72d9d96599fe4982e5423554 2013 openvpn_2.4.6-1ubuntu2.3ppa1.dsc
+ 2a9eb80485bca5d50fdd5dde3a65e469c27d3778 63672 openvpn_2.4.6-1ubuntu2.3ppa1.debian.tar.xz
+ 413a61b79b90bb6f8fe90034a52d24d8c198a80e 7224 openvpn_2.4.6-1ubuntu2.3ppa1_source.buildinfo
+Checksums-Sha256:
+ 654efdba52065aa4c4710447e7b4a81d900f760d67e62a8f394af62f3a59ec2f 2013 openvpn_2.4.6-1ubuntu2.3ppa1.dsc
+ 3698d1506cdc4377cc0e18633ab4deb8ebef4c1c37a4832705173ce37d055e77 63672 openvpn_2.4.6-1ubuntu2.3ppa1.debian.tar.xz
+ 00e67eefa5da7e958a73b798ae505e8b1712be1659c3baef25f5df8bdf663df7 7224 openvpn_2.4.6-1ubuntu2.3ppa1_source.buildinfo
+Files:
+ 334ef1bdc490bbf1c4df369545df7112 2013 net optional openvpn_2.4.6-1ubuntu2.3ppa1.dsc
+ 824b86bec3c5e446055a55163802e166 63672 net optional openvpn_2.4.6-1ubuntu2.3ppa1.debian.tar.xz
+ fdc1cf0916f639daa30cbd8661350162 7224 net optional openvpn_2.4.6-1ubuntu2.3ppa1_source.buildinfo
+Original-Maintainer: Bernhard Schmidt <berni@debian.org>
+
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCgAdFiEEYK4yuieAGxO60dyee297MmJake4FAl0rLzUACgkQe297MmJa
+ke7+ZgwA6mck9VfNmzJmy9lOOtr+xomiYteDOKTY+7famBPBNDLN0C6bpaMYw8FA
+Ya8Jl0zYcIukDS7As7c2RZH+zWpH/N36rMy4/jfAjG6kWHHaEIFE61ZJO29N8NMh
+eQgGmj72yQu/H32YgzbIQM23AJrCfnQRSC1fyGLj6jIrzl8I5XI5LY/p5p721Uar
+pY2UvNi7QIress2jDQk+Ekc9zSf46JC/RDu5kLJKpBin0ffZqqj+TxEG9+HvJZGL
+xPAsM/z1fIgs/9eGJLPYvIVJfxzRV6ET2LzbzEgA5rAfOEzLYdP4Iojf76RDBwRA
+RwDgTJOInvMC2HXXtMEhE8/xWjEj0ZPx6cbnSmRi5EFt0Ka+jm7OSv5oGGr+rfm1
+wGcNe6XuASbuNVwZtR8WwTMRRP69gWTY5J6DdbktuiwaTjrdXkWNlCRZ4pFtMYEZ
+QfWWrirwE1nmWzBhUFEipQxvMs2GeXSmG8KKGIcj9QjjY9pE39QUeu7jmzZvpDTh
+VO7EwHsJ
+=+Hng
+-----END PGP SIGNATURE-----
